@@ -83,12 +83,10 @@ typedef MonitoringServerInfoList::iterator MonitoringServerInfoListIterator;
 typedef MonitoringServerInfoList::const_iterator MonitoringServerInfoListConstIterator;
 
 // Issue Tracking System
-struct ITSInfo {
-	std::string baseURL;
+struct ITSInfo :  public MonitoringServerInfo {
+	std::string baseURL; // TODO: Should be moved to MontoringServerInfo
 	std::string projectId;
 	std::string trackerId;
-	std::string userName;
-	std::string password;
 };
 
 typedef std::list<ITSInfo>    ITSInfoList;
