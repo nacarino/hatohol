@@ -89,8 +89,7 @@ typedef std::list<MonitoringServerInfo>    MonitoringServerInfoList;
 typedef MonitoringServerInfoList::iterator MonitoringServerInfoListIterator;
 typedef MonitoringServerInfoList::const_iterator MonitoringServerInfoListConstIterator;
 
-// Issue Tracking System
-struct ITSInfo {
+struct IssueTrackerInfo {
 	IssueTrackerIdType id;
 	IssueTrackerType   type;
 	std::string baseURL;
@@ -100,9 +99,9 @@ struct ITSInfo {
 	std::string password;
 };
 
-typedef std::list<ITSInfo>    ITSInfoList;
-typedef ITSInfoList::iterator ITSInfoListIterator;
-typedef ITSInfoList::const_iterator ITSInfoListConstIterator;
+typedef std::list<IssueTrackerInfo>    IssueTrackerInfoList;
+typedef IssueTrackerInfoList::iterator ITSInfoListIterator;
+typedef IssueTrackerInfoList::const_iterator IssueTrackerInfoListConstIterator;
 
 struct ArmPluginInfo {
 	MonitoringSystemType type;
