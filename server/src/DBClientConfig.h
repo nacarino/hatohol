@@ -34,6 +34,13 @@ enum MonitoringSystemType {
 	NUM_MONITORING_SYSTEMS,
 };
 
+enum IssueTrackerType {
+	ISSUE_TRACKER_UNKNOWN = -2,
+	ISSUE_TRACKER_FAKE    = -1,
+	ISSUE_TRACKER_REDMINE,
+	NUM_ISSUE_TRACKERS,
+};
+
 struct MonitoringServerInfo {
 	ServerIdType         id;
 	MonitoringSystemType type;
@@ -84,6 +91,8 @@ typedef MonitoringServerInfoList::const_iterator MonitoringServerInfoListConstIt
 
 // Issue Tracking System
 struct ITSInfo {
+	IssueTrackerIdType id;
+	IssueTrackerType   type;
 	std::string baseURL;
 	std::string projectId;
 	std::string trackerId;
