@@ -64,7 +64,7 @@ public:
 	static std::string getAPIVersionString(APIVersion version);
 
 protected:
-	virtual void setSoupHandler(SoupServer *soupServer);
+	virtual void setSoupHandlers(SoupServer *soupServer);
 	static void startObject(JsonParserAgent &parser,
 	                        const std::string &name);
 	static void handlerAPI
