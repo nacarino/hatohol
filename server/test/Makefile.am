@@ -77,9 +77,9 @@ residentTest_la_LIBADD  = libTest.la
 
 libTest_la_SOURCES = \
 	FormulaTestUtils.cc Helpers.cc DBAgentTest.cc DBClientTest.cc \
-	ZabbixAPIEmulator.cc Synchronizer.cc \
+	HttpServerStub.cc ZabbixAPIEmulator.cc Synchronizer.cc \
 	FormulaTestUtils.h Helpers.h DBAgentTest.h DBClientTest.h \
-	ZabbixAPIEmulator.h Synchronizer.h \
+	HttpServerStub.h ZabbixAPIEmulator.h Synchronizer.h \
 	ExceptionTestUtils.h AssertJoin.h \
 	MultiLangTest.h
 libTest_la_LDFLAGS =
